@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import axios from 'axios';
 import './assets/css/App.css';
 
@@ -19,11 +19,16 @@ export default class App extends React.Component {
     return (
       <>
         { this.state.users.map(user => 
-            <ul>
-                <li>{user.name}</li>
-                <li>{user.username}</li>
-                <li>{user.img}</li>
-            </ul>     
+            <div className="container" >
+                <img src={user.img} alt="Perfil"/>
+                <div className="data" >
+                    <p>{user.name}</p>
+                    <p>ID: {user.id} - Nome de Usuário: {user.username}</p>
+                </div>
+                <div className="container-btn">
+                  <button className="btn">Pagar</button>
+                </div>
+            </div>     
         )}
       </>
     )

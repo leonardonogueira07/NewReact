@@ -1,7 +1,41 @@
-body {
-    background-color: aqua;
+*{
+    padding: 0;
+    margin: 0;
 }
-ul {
-    list-style: none;
-    background-color:cadetblue;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*Container Stilo da Pagina*/
+.container {
+    display: flex;
+    align-items: center;
+    border: solid 1px white;
+    background-color: #323351; 
+    font-family: 'Roboto', sans-serif;
+}
+/*Estilização da Imagen Perfil*/
+img {
+    width: 15%;
+    border-radius: 100%;
+    margin-left: 5%;
+}
+/*Estilo das informações*/
+.data {
+    color: white;
+    width: 90%;
+    margin: 5%;
+    font-size: 1.5em;
+}
+/*Ajustes no Botão*/
+.container-btn {
+    margin-right: 5%;
+}
+/*Estilos Botão*/
+button.btn {
+    padding: 5px;
+    font-weight: bolder;
+}
+/*Responsividade Mobile*/
+@media (max-width: 400px) {
+    .data {
+        font-size: 0.7em;
+    }
 }
