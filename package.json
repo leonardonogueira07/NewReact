@@ -2,6 +2,7 @@
   "name": "meuapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nogueira-leonardo.github.io/NewReact/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
