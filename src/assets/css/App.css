@@ -33,9 +33,83 @@ button.btn {
     padding: 5px;
     font-weight: bolder;
 }
+/*Modal*/
+.overlay {
+    font-family: 'Roboto', sans-serif;
+}
+.container-payment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.items-payment {
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    padding: 3%;
+    font-size: 1.0em;
+}
+.title-payment {
+    text-align: left;
+    padding: 10px;
+}
+.sub-title-payment {
+    background-color: #292b41;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.sub-title-playment2 {
+    color: yellow;
+}
+.form-payment {
+    margin: 10px 0;
+}
+.input-form-payment, .select-form-payment {
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid #292b41;
+    border-radius: 6px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    padding: 12px;
+    border-radius: 5px;
+}
+.btnx {
+    color: white;
+    background-color: #292b41;
+    width: 30%;
+    border-style: none;
+    border-radius: 5px;
+}
+
 /*Responsividade Mobile*/
 @media (max-width: 400px) {
     .data {
-        font-size: 0.7em;
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: 1.0em;
+    }
+}
+@media (max-width: 350px) {
+    
+    .items-payment {
+        font-size: 0.1em;
     }
 }
